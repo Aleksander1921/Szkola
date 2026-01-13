@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+
+    <!-- Content Security Policy (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; media-src 'self' blob:;">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Odtwarzacz MP3</h1>
+    
+    <input type="file" id="fileInput" accept="audio/mp3">
+    <br>
+    <audio id="audioPlayer" controls>
+        <source id="audioSource" type="audio/mp3">
+        Twoja przeglądarka nie wspiera tagu audio.
+    </audio>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
